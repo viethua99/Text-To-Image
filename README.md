@@ -1,22 +1,27 @@
-![Android-Text-to-Image](https://socialify.git.ci/viethua99/Android-Text-to-Image/image?description=1&descriptionEditable=%F0%9F%9A%80%20Instantly%20generate%20high-quality%20images%20based%20on%20your%20text%20prompt%20%F0%9F%9A%80&font=Inter&logo=https%3A%2F%2Ftabris.com%2Fwp-content%2Fuploads%2F2021%2F06%2Fjetpack-compose-icon_RGB.png&name=1&pattern=Brick%20Wall&theme=Dark)
+![KMP-Stable-Diffusion](docs/images/project-header.png)
 <p align="center">
-  <a href="https://github.com/viethua99/Android-Text-to-Image/releases">
-     <img src="https://img.shields.io/github/downloads/viethua99/Android-Text-to-Image/total?color=3BB143" alt="Github - viethua99">
+  <a href="https://github.com/viethua99/KMP-Stable-Diffusion/releases">
+     <img src="https://img.shields.io/github/downloads/viethua99/KMP-Stable-Diffusion/total?color=3BB143" alt="Github - viethua99">
   </a>
 
   <a href="https://opensource.org/licenses/Apache-2.0">
-     <img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/>
+     <img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-brown.svg"/>
   </a>
 
   <a href="https://github.com/viethua99">
      <img src="https://img.shields.io/badge/Github-viethua99-blueviolet?logo=github" alt="Github - viethua99">
   </a>
+
+  <a href="https://www.linkedin.com/in/viet-hua-3255a2181/">
+     <img src="https://img.shields.io/badge/Linkedin-Viet Hua-0077B5?logo=linkedin&logoColor=" alt="Linkedin - viethua99">
+  </a>
+
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Download
-Go to the [Releases](https://github.com/viethua99/Android-Text-to-Image/releases) to download the latest APK.
+Go to the [Releases](https://github.com/viethua99/KMP-Stable-Diffusion/releases) to download the latest APK version.
 
 <img src="docs/images/showcase_v2.gif" align="right" width="280"/>
 
@@ -45,11 +50,11 @@ Go to the [Releases](https://github.com/viethua99/Android-Text-to-Image/releases
 
 
 ## Architecture / Modularization
-**Android Text-to-Image** is based on the MVVM architecture, which follows the [Google's official architecture guidance](https://developer.android.com/topic/architecture).
+**KMP-Stable-Diffusion** is based on the MVVM architecture, which follows the [Google's official architecture guidance](https://developer.android.com/topic/architecture).
 
 ![architecture](docs/images/architecture.png)
 
-The overall architecture of **Android Text-to-Image** is composed of three layers; the UI layer, the Domain layer and the Data layer. Each layer has dedicated components and they have each different responsibilities, as defined below:
+The overall architecture of **KMP-Stable-Diffusion** is composed of three layers; the UI layer, the Domain layer and the Data layer. Each layer has dedicated components and they have each different responsibilities, as defined below:
 
 - **Re-usability**: Modularizing reusable codes properly enable opportunities for code sharing and limits code accessibility in other modules at the same time.
 - **Parallel Building**: Each module can be run in parallel and it reduces the build time.
@@ -87,14 +92,14 @@ The Domain Layer consists of use cases, which fit between ViewModels from the UI
 
 The Data layer consists of repositories, which include business logic, such as querying data from the local database and requesting remote data from the network. It is implemented as an offline-first source of business logic and follows the [single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth) principle.<br>
 
-**Android Text-to-Image** is an offline-first app is an app that is able to perform all, or a critical subset of its core functionality without access to the internet.
+**KMP-Stable-Diffusion** is an offline-first app is an app that is able to perform all, or a critical subset of its core functionality without access to the internet.
 So users don't need to be up-to-date on the network resources every time and it will decrease users' data consumption. For further information, you can check out [Build an offline-first app](https://developer.android.com/topic/architecture/data-layer/offline-first).
 
 ## Stable Diffusion API
 
 <img src="https://media.licdn.com/dms/image/C560BAQHKCfkGo3NAFg/company-logo_200_200/0/1674489509554?e=2147483647&v=beta&t=gQQAyRwXUtoKjaxepavRkBsaxjY0L-qcXc9o-eykCYI" align="right" width="12%"/>
 
-Android Text-to-Image using the [Stable Diffusion API](https://stablediffusionapi.com/) for constructing RESTful API.<br>
+**KMP-Stable-Diffusion** using the [Stable Diffusion API](https://stablediffusionapi.com/) for constructing RESTful API.<br>
 StableDiffusionAPI provides a RESTful API interface to highly detailed objects built from thousands of lines of data related to text to images.
 ## Setup
 Step 1: Create an account and generate an API key at [Stable Diffusion API Key](https://stablediffusionapi.com/dashboard/apikeys)
@@ -105,11 +110,10 @@ Step 2: Paste the API key to your project `gradle.properties` file:
 Step 3: Sync project and run your app.
 
 ## Find this repository useful? :heart:
-Support it by joining __[stargazers](https://github.com/viethua99/Android-Text-to-Image/stargazers)__ for this repository. :star: <br>
+Support it by joining __[stargazers](https://github.com/viethua99/KMP-Stable-Diffusion/stargazers)__ for this repository. :star: <br>
 Also, __[follow me](https://github.com/viethua99)__ on GitHub for my next creations! 🤩
-
 
 ## License
 
-**Android Text-to-Image** is distributed under the terms of the Apache License (Version 2.0). See the
+**KMP-Stable-Diffusion** is distributed under the terms of the Apache License (Version 2.0). See the
 [license](LICENSE) for more information.
